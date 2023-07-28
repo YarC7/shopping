@@ -24,7 +24,7 @@ const Login = () => {
 
   const apiLogin = (account) => {
     axios
-      .post("http://localhost:3000/api/customer/login", account)
+      .post("/api/customer/login", account)
       .then((res) => {
         const result = res.data;
         if (result.success === true) {
@@ -74,4 +74,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default withRouter(Login);
