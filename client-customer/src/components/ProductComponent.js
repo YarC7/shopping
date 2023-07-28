@@ -10,7 +10,7 @@ import "./skeleton.css";
 
 const fetchProductsByCategory = async (categoryId) => {
   try {
-    const res = await axios.get(`http://localhost:3000/api/customer/products/category/${categoryId}`);
+    const res = await axios.get(`/api/customer/products/category/${categoryId}`);
     return res.data;
   } catch (error) {
     console.error("Lỗi khi lấy sản phẩm theo danh mục:", error);
@@ -20,7 +20,7 @@ const fetchProductsByCategory = async (categoryId) => {
 
 const fetchProductsByKeyword = async (searchKeyword) => {
   try {
-    const res = await axios.get(`http://localhost:3000/api/customer/products/search/${searchKeyword}`);
+    const res = await axios.get(`/api/customer/products/search/${searchKeyword}`);
     return res.data;
   } catch (error) {
     console.error("Lỗi khi lấy sản phẩm theo từ khóa:", error);

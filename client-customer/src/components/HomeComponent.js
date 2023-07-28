@@ -78,7 +78,7 @@ class Home extends Component {
 
   apiGetNewProducts() {
     return axios
-      .get("http://localhost:3000/api/customer/products/new")
+      .get("/api/customer/products/new")
       .then((res) => {
         const result = res.data;
         this.setState({ newprods: result });
@@ -87,7 +87,7 @@ class Home extends Component {
 
   apiGetHotProducts() {
     axios
-      .get("http://localhost:3000/api/customer/products/hot")
+      .get("/api/customer/products/hot")
       .then((res) => {
         const result = res.data;
         this.setState({ hotprods: result });
