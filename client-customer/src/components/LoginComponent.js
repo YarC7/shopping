@@ -74,4 +74,4 @@ const Login = () => {
   );
 };
 
-export default withRouter(Login);
+export default Login;
