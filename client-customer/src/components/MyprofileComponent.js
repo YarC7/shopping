@@ -145,7 +145,7 @@ class Myprofile extends Component {
   apiPutCustomer(id, customer) {
     const config = { headers: { "x-access-token": this.context.token } };
     axios
-      .put("http://localhost:4000/api/customer/customers/" + id, customer, config)
+      .put("http://localhost:3000/api/customer/customers/" + id, customer, config)
       .then((res) => {
         const result = res.data;
         if (result) {

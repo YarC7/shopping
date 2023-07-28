@@ -18,7 +18,7 @@ const ProductDetail = () => {
 
   const apiGetProduct = (id) => {
     axios
-      .get(`http://localhost:4000/api/customer/products/${id}`)
+      .get(`http://localhost:3000/api/customer/products/${id}`)
       .then((res) => {
         const result = res.data;
         setProduct(result);

@@ -24,7 +24,7 @@ const Login = () => {
 
   const apiLogin = (account) => {
     axios
-      .post("http://localhost:4000/api/customer/login", account)
+      .post("http://localhost:3000/api/customer/login", account)
       .then((res) => {
         const result = res.data;
         if (result.success === true) {

@@ -42,7 +42,7 @@ const MenuComponent = () => {
   };
 
   const apiGetCategories = () => {
-    axios.get('http://localhost:4000/api/customer/categories').then((res) => {
+    axios.get('http://localhost:3000/api/customer/categories').then((res) => {
       const result = res.data;
       setCategories(result);
     });
